@@ -1,84 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookbook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cookbook</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-</head>
-
-<body>
-  <!--navigation bar by priyanka-->
-  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
-    <a class="navbar-brand" href="#">
-      <img src="img/bird.jpg" alt="logo" style="width:50px;">
-    </a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">HOME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">SERVICES</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">MENU</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-          PAGES
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Recipe Search</a>
-          <a class="dropdown-item" href="#">Element</a>
-          <a class="dropdown-item" href="#">FAQs</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">CONTACT</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">BOOK A TABLE</a>
-      </li>
-    </ul>
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </nav>
-  <!--hero section by priyanka-->
-  <div class="container-xxl py-5 bg-dark hero-header mb-5">
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/colourful-various-herbs.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/pexels.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="img/salad.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-caption">
-          <div class="row align-items-center g-5">
-            <div class="col-lg-6 text-center text-lg-start">
-              <h1 class="display-3 text-white animated slideInLeft">Enjoy Our Meal</h1>
-              <p class="text-whitw animated slideInLeft mb-4 pb-2">Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Totam, ut.</p>
-              <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">BOOK A TABLE</a>
+  <body>
+    <!--navigation bar by priyanka-->
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+      <a class="navbar-brand" href="#">
+        <img src="img/bird.jpg" alt="logo" style="width: 50px" />
+      </a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MENU</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-toggle="dropdown"
+          >
+            PAGES
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Recipe Search</a>
+            <a class="dropdown-item" href="#">Element</a>
+            <a class="dropdown-item" href="#">FAQs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BOOK A TABLE</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+    <!--hero section by priyanka-->
+    <div class="container-xxl py-5 bg-dark hero-header mb-5">
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="img/colourful-various-herbs.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="img/pexels.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="img/salad.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-caption">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="display-3 text-white animated slideInLeft">
+                  Enjoy Our Meal
+                </h1>
+                <p class="text-whitw animated slideInLeft mb-4 pb-2">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Totam, ut.
+                </p>
+                <a
+                  href=""
+                  class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft"
+                  >BOOK A TABLE</a
+                >
+              </div>
             </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-
-</body>
-
+    <!--Card section-->
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="img/placeimg_200_200_animals.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Recipe 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go to recipe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem">
+            <img src="img/placeimg_200_200_animals.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Recipe 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go to recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container d-flex justify-content-center">
+      <div class="row">
+        <div class="col-6">
+          <div class="card" style="width: 18rem">
+            <img src="img/placeimg_200_200_animals.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Recipe 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go to recipe</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card" style="width: 18rem">
+            <img src="img/placeimg_200_200_animals.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Recipe 4</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-primary">Go to recipe</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
