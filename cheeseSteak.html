@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookbook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation bar by Priyanka-->
+    <nav
+      class="navbar navbar-expand-sm bg-light justify-content-center sticky-top"
+    >
+      <a class="navbar-brand" href="#">
+        <img src="img/bird.jpg" alt="logo" style="width: 50px" />
+      </a>
+      <ul class="navbar-nav pl-1 pr-1">
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MENU</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-bs-toggle="dropdown"
+          >
+            PAGES
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Recipe Search</a>
+            <a class="dropdown-item" href="#">Element</a>
+            <a class="dropdown-item" href="#">FAQs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BOOK A TABLE</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <main class="container-fluid bg-dark text-white py-5">
+      <!-- Recipe -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Philly Cheesesteak</h1>
+            <h2 class="fs-6">
+              "Sandwich so good makes you wanna slap your mama"
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="img/Philly-Cheesesteak-47074040.png"
+              class="img-fluid mx-auto d-block mb-3"
+              alt="tech image"
+            />
+            <h3 class="mt-5">KEY FACTS</h3>
+            <ul class="list-group list-group-horizontal-lg">
+              <li class="list-group-item col-6 bg-dark text-light">
+                <h4 class="fs-5">Nutrition</h4>
+                1638 Calories <br />75 grams of fat<br />82 grams of protein
+              </li>
+              <li class="list-group-item col-6 bg-dark text-light">
+                <h4 class="fs-5">Servings</h4>
+                1 Sandwich
+              </li>
+            </ul>
+          </div>
+          <!-- Recipe 2 -->
+          <div class="col-6">
+            <div class="table-responsive">
+              <table
+                class="table table-dark table-striped text-white table-hover"
+              >
+                <thead>
+                  <tr>
+                    <th class="fs-3 fw-normal">YOU WILL NEED</th>
+                    <th class="fs-3 fw-normal">THIS MUCH</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ribeye steak</td>
+                    <td>10 to 12 ounces</td>
+                  </tr>
+                  <tr>
+                    <td>Salt</td>
+                    <td>1/2 tsp</td>
+                  </tr>
+                  <tr>
+                    <td>Black pepper</td>
+                    <td>1/2 tsp</td>
+                  </tr>
+                  <tr>
+                    <td>Olive Oil</td>
+                    <td>2 tbsp</td>
+                  </tr>
+                  <tr>
+                    <td>Sliced Sweet Onion</td>
+                    <td>1/2 medium</td>
+                  </tr>
+                  <tr>
+                    <td>Sliced Green Bell Pepper</td>
+                    <td>1/2</td>
+                  </tr>
+                  <tr>
+                    <td>Sliced Red Bell Pepper</td>
+                    <td>1/2</td>
+                  </tr>
+                  <tr>
+                    <td>Provolone Cheese</td>
+                    <td>2 ounces</td>
+                  </tr>
+                  <tr>
+                    <td>Toasted Hoagie Rolls</td>
+                    <td>2</td>
+                  </tr>
+                  <tr>
+                    <td>Warmed Cheez Wizz</td>
+                    <td>1/4 cup</td>
+                  </tr>
+                  <tr>
+                    <td>Fresh Thyme</td>
+                    <td>1/3 cup</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 class="mt-5 fs-3">Directions</h3>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item bg-dark text-light">
+                  Place steak in the freezer on a sheet pan for about 10 minutes
+                  so it gets very cold but not frozen through. Trim off any
+                  large pieces of fat normally around the edges of the steak,
+                  but some veins of fat in the middle of the steak are good.
+                  Slice the steak as thin as possible with a sharp knife. You
+                  wont be able to get it paper thin without a meat slicer, but
+                  think of thick deli cut meat. Season steak with salt and
+                  pepper.
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  In a large skillet set over medium heat, add 1 tablespoon of
+                  olive oil along with sliced onions and peppers. Season with
+                  1/4 teaspoon salt and pepper. Cook, stirring occasionally,
+                  until the onions and peppers have softened and start to
+                  caramelize around the edges, 12 to 15 minutes. Don’t rush
+                  them!
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Heat a griddle or large skillet over medium-high heat. Add the
+                  remaining 1 tablespoon of olive oil and the sliced steak.
+                  Spread out the steak in the skillet in a thin even layer so it
+                  covers as much surface area as possible. Cook for a minute or
+                  two and then stir to finish cooking the steak. It might need
+                  another minute or two, but it will cook very quickly.
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Turn heat down to low on the steak and add the peppers and
+                  onions to the steak mixture and stir to combine. Add the
+                  provolone slices to the top of the steak mixture and let the
+                  cheese melt. Stir to combine, once the cheese has melted.
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Evenly scoop the cheesesteak mixture into the toasted hoagie
+                  rolls. The hoagie rolls should be packed! Optionally, drizzle
+                  the cheesesteaks with warm Cheez Whiz for maximum cheesiness.
+                  Sprinkle fresh thyme over top and serve
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="container-fluid pt-5 pb-5 bg-success text-uppercase text-center text-white"
+    >
+      <div class="row">
+        <div class="col">
+          contact <br />
+          about us <br />
+          Jobs <br />
+        </div>
+        <div class="col">
+          another links <br />
+          simular receipt <br />
+          indegridiants <br />
+        </div>
+        <div class="col">color 3</div>
+      </div>
+    </footer>
+  </body>
+</html>
