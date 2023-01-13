@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cookbook</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navigation bar by Priyanka-->
+    <nav
+      class="navbar navbar-expand-sm bg-light justify-content-center sticky-top"
+    >
+      <a class="navbar-brand" href="#">
+        <img src="img/bird.jpg" alt="logo" style="width: 50px" />
+      </a>
+      <ul class="navbar-nav pl-1 pr-1">
+        <li class="nav-item">
+          <a class="nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">MENU</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-bs-toggle="dropdown"
+          >
+            PAGES
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Recipe Search</a>
+            <a class="dropdown-item" href="#">Element</a>
+            <a class="dropdown-item" href="#">FAQs</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">BOOK A TABLE</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <main class="container-fluid bg-dark text-white py-5">
+      <!-- Recipe -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Fried Eggs</h1>
+            <h2 class="fs-6">
+              Simply the best when you are hungry and have nothing else but eggs
+              at home
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="img/friedEggs.webp"
+              class="img-fluid mx-auto d-block mb-3"
+              alt="tech image"
+            />
+            <h3 class="mt-5">KEY FACTS</h3>
+            <ul class="list-group list-group-horizontal-lg">
+              <li class="list-group-item col-6 bg-dark text-light">
+                <h4 class="fs-5">Total Time</h4>
+                5 minutes: <br />*0 mins prep / 5 mins cook <br />/ 0 mins rest
+              </li>
+              <li class="list-group-item col-6 bg-dark text-light">
+                <h4 class="fs-5">Servings</h4>
+                1 person
+              </li>
+            </ul>
+          </div>
+          <!-- Recipe 2 -->
+          <div class="col-6">
+            <div class="table-responsive">
+              <table
+                class="table table-dark table-striped text-white table-hover"
+              >
+                <thead>
+                  <tr>
+                    <th class="fs-3 fw-normal">YOU WILL NEED</th>
+                    <th class="fs-3 fw-normal">THIS MUCH</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Eggs</td>
+                    <td>3</td>
+                  </tr>
+                  <tr>
+                    <td>Salt</td>
+                    <td>1 pinch</td>
+                  </tr>
+                  <tr>
+                    <td>Pepper</td>
+                    <td>1 pinch</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 class="mt-5 fs-3">TO DO THIS</h3>
+              <ol class="list-group list-group-numbered">
+                <li class="list-group-item bg-dark text-light">Heat pan</li>
+                <li class="list-group-item bg-dark text-light">
+                  Crack the eggs
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Let the eggs slowly slide into the pan from their shells
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Fry for about 5 minutes until they look like you want them to
+                  look
+                </li>
+                <li class="list-group-item bg-dark text-light">
+                  Optional: turn eggs over for over-easy eggs
+                </li>
+                <li class="list-group-item bg-dark text-light">Enjoy!</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-center text-lg-start bg-white text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="#"><i class="fa fa-2x fa-facebook me-2"></i></a>
+          <a href="#"><i class="fa fa-2x fa-twitter me-2"></i></a>
+          <a href="#"><i class="fa fa-2x fa-linkedin me-2"></i></a>
+          <a href="#"><i class="fa fa-2x fa-google-plus me-2"></i></a>
+          <a href="#"><i class="fa fa-2x fa-skype me-2"></i></a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">Company name</h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Indian Dishes</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">SeaFood</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Cake</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Special for our</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p>Pinneberg, 25421, DE</p>
+              <p>info@example.com</p>
+              <p>+ 49 234 567 88</p>
+              <p>+ 49 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.025)"
+      >
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="#">GROUP 5</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+  </body>
+</html>
